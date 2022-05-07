@@ -1,6 +1,10 @@
 import { defineCustomElement } from 'vue';
 import Toast from './components/Custom-Toast.ce.vue';
-
+import Cards from './components/Custom-Cards.ce.vue';
+//import CardCa from './components/Custom-Ca.ce.vue';
 const CustomToast = defineCustomElement(Toast);
-
+const CustomCards = defineCustomElement(Cards);
+//const CustomCa = defineCustomElement(CardCa);
 customElements.define('custom-toast', CustomToast);
+customElements.define('custom-cards', CustomCards);
+//customElements.define('custom-ca', CustomCa);

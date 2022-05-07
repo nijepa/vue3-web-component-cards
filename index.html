@@ -18,6 +18,12 @@
   </head>
 
   <body>
+    <style>
+      .cardovi {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
     <button onclick="showToast()">toast</button>
     <div id="app">
       <h1>Vue Web Components!</h1>
@@ -30,6 +36,13 @@
           </div>
         </span>
       </custom-toast>
+      <div class="cardovi">
+        <custom-cards id="c1">
+        </custom-cards>
+        <custom-cards id="c2">
+        </custom-cards>
+      </div>
+      
     </div>
     <script type="module" src="/main.js"></script>
     <script>
@@ -45,6 +58,7 @@
         decoration: true,
         colorized: true,
         backdrop: false,
+        color: '#ffb700'
       };
       toast.setAttribute("toast-style", JSON.stringify(ts));
       const showToast = () => {
@@ -54,6 +68,18 @@
       function toastClosed() {
         toast.setAttribute('is-active', 'false');
       }
+
+      const cd = {
+        title: 'Error',
+        labels: ['date', 'value', 'type'],
+        button: 'show'
+      };
+      const cards = document.querySelector('#c1');
+      cards.setAttribute("cards-data", JSON.stringify(cd));
+      cards.setAttribute("cards-style", JSON.stringify(ts));
+      const cards2 = document.querySelector('#c2');
+      cards2.setAttribute("cards-data", JSON.stringify(cd));
+      cards2.setAttribute("cards-style", JSON.stringify(ts));
     </script>
   </body>
 </html>
