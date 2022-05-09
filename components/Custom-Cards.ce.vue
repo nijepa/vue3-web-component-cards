@@ -19,7 +19,7 @@
                   <img
                     :src="`https://images.cadooz.com/${voucher.voucherImage}`"
                     alt="${voucher.name}"
-                    class="custom-card__image--container__image--voucher"
+                    class="custom-card__image-container__image"
                   />
                 </div>
                 <div class="custom-card__details">
@@ -36,7 +36,7 @@
                     <span>{{ voucher.benefitModule }}</span>
                   </div>
                 </div>
-                <div class="custom-card__list-custom-card__button ml-sm-auto">
+                <div class="custom-card__list-button ml-sm-auto">
                   <button
                     class="custom-card__button custom-card__button-primary"
                   >
@@ -51,7 +51,7 @@
         <a
           href="https://employee-benefit-club.n3.cadooztest.com/frontend/view.do;jsessionid=JZMyY2BUB6KRg5ot_lEHizt27xu1kZExYq7_IdYa.betatest03?path=%2Fshop%2Febc%2Forder_history"
           id="to-voucher-history"
-          class="custom-card__button custom-card__button-outline custom-card__list-custom-card__button"
+          class="custom-card__button custom-card__button-outline custom-card__list-button"
           >Zur Gutscheinhistorie</a
         >
       </div>
@@ -228,7 +228,7 @@ const hideToast = () => {
   padding: 1em 0;
   height: 100%;
 }
-.custom-card__list-custom-card__button {
+.custom-card__list-button {
   align-self: flex-end;
   margin-top: 1rem;
 }
@@ -245,7 +245,7 @@ const hideToast = () => {
 .custom-card__image img {
   width: 100%;
 }
-.custom-card__image--container__image--voucher {
+.custom-card__image-container__image {
   box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 12%);
   border-radius: 0.5rem;
 }
@@ -253,7 +253,7 @@ img {
   vertical-align: middle;
   border-style: none;
 }
-.custom-card__list-custom-card__button {
+.custom-card__list-button {
   align-self: flex-end;
   margin-top: 1rem;
 }
