@@ -21,13 +21,13 @@
 ##### * Set component attribute `cards-data` as JSON object
 #####   with following properties: 
 - ***`title`*** (String)
-- ***`message`*** (String - *can be used html*)
-- ***`type`*** (String - *info, success, error*)>
+- ***`labels`*** (String - *array of labels*)
+- ***`button`*** (String - *button, link*)>
 
 ###### example: 
     const td = { title: 'some title', 
-                message: 'some message', 
-                type: 'info' }
+                labels: '['name', 'value']', 
+                button: 'link' }
     document.querySelector('custom-cards').setAttribute('cards-data', JSON.stringify(td))
 
 ##### * Styles can be set by setting attribute `toast-style`
