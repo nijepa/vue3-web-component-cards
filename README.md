@@ -32,18 +32,14 @@
 
 ##### * Styles can be set by setting attribute `toast-style`
 ##### with following properties:
-- ***`position`*** (String - *center, left-top, right-top, left-bottom, right-bottom*)
 - ***`decoration`*** (Boolean)
-- ***`backdrop`*** (Boolean)
 - ***`colorized`*** (Boolean)
 - ***`color`*** (String - *any color*)
 - ***`font`*** (String - *any font-family*)</span>
 
 ###### example:
-    const ts = { position: 'center', 
-                decoration: false, 
+    const ts = { decoration: false, 
                 colorized: false, 
-                backdrop: false, 
                 color: "#ffffff", 
                 font: "'Open Sans', sans-serif" }
     document.querySelector('custom-cards').setAttribute('cards-style', JSON.stringify(ts))
