@@ -207,6 +207,7 @@ const hideToast = () => {
   color: #2c3e50;
   font-family: v-bind(defaultStyle.font);
 }
+
 .stage__card {
   display: flex;
   flex-direction: column;
@@ -221,6 +222,7 @@ const hideToast = () => {
   border-radius: 0.5rem;
   box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 12%);
 }
+
 .custom-card__list {
   display: flex;
   flex-direction: column;
@@ -228,20 +230,24 @@ const hideToast = () => {
   padding: 1em 0;
   height: 100%;
 }
+
 .custom-card__list-button {
   align-self: flex-end;
   margin-top: 1rem;
 }
+
 .custom-card {
   display: flex;
   column-gap: 1em;
   align-items: center;
   font-size: 1rem;
 }
+
 .custom-card__image {
   min-width: 120px;
   max-width: 120px;
 }
+
 .custom-card__image img {
   width: 100%;
 }
@@ -249,14 +255,17 @@ const hideToast = () => {
   box-shadow: 0 0.125rem 0.5rem rgb(0 0 0 / 12%);
   border-radius: 0.5rem;
 }
+
 img {
   vertical-align: middle;
   border-style: none;
 }
+
 .custom-card__list-button {
   align-self: flex-end;
   margin-top: 1rem;
 }
+
 .custom-card__button:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
@@ -288,15 +297,18 @@ button:not(:disabled) {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .custom-card__button:hover {
   background-color: #ca981a;
 }
+
 .custom-card__button-primary {
   background-color: v-bind(applyStyle.color);
   color: rgb(255, 255, 255);
   outline: none;
   border: 0;
 }
+
 @media (min-width: 576px) {
   .ml-sm-auto,
   .mx-sm-auto {
